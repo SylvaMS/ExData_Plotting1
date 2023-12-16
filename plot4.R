@@ -6,9 +6,9 @@ x$Date <- as.Date(x$Date, format = "%d/%m/%Y")
 
 subset_dates <- subset(x, x$Date == c("2007-02-01", "2007-02-02"))
 
-par(mfrow=c(2,2))
-
 png("plot4.png", width = 480, height = 480, units = "px")
+
+par(mfrow=c(2,2))
 
 # Top left plot:
 plot(subset_dates$DateTime, subset_dates$Global_active_power, type = "l", xlab = "",xaxt = "n", 
